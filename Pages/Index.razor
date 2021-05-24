@@ -1,0 +1,16 @@
+﻿@using BlazorPro.BlazorSize
+@page "/"
+
+<p>This component demonstrates adaptive rendering of a Blazor UI.</p>
+<MediaQueryList>
+
+    <MediaQuery Media="@Breakpoints.SmallDown">
+        <Matched>
+            <h1>Small</h1>
+        </Matched>
+        <Unmatched>
+            <h1>Large</h1>
+        </Unmatched>
+    </MediaQuery>
+
+</MediaQueryList>
